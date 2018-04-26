@@ -58,7 +58,7 @@ public class DecoratorPattern {
     }
 
     //被装饰类
-    class Person implements IPerson{
+    private class Person implements IPerson{
         @Override
         public void say() {
             System.out.println("say Chiness");
@@ -80,6 +80,7 @@ public class DecoratorPattern {
         public void say() {
             person.say();
             System.out.println("say English");
+            System.out.println("more function");
         }
     }
 }
